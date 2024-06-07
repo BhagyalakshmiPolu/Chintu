@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+    int age,weight;
+    scanf("%d%d",&age,&weight);
+    if(age>=12)
+    {
+        if(weight>=40 && weight<=110)
+        {
+            printf("jump");
+        }
+        else if(weight>110)
+        {
+            printf("extra rope needed");
+        }
+        else
+        {
+            printf("not eligible");
+        }
+    }
+}
