@@ -1,0 +1,28 @@
+//neven numbers//
+#include<stdio.h>
+void main()
+{
+    int  i,n,sum,flag;
+    scanf("%d",&n);
+    sum=0;
+    i=1;
+    flag=0;
+    while(i<=n)
+    {
+        if(i%2==0)
+        {
+            if(flag==0)
+            {
+                printf("%d",i);
+                flag=1;
+            }
+            else
+            {
+                printf("%d",i);
+            }
+            sum=sum+i;
+        }
+        i++;
+    }
+    printf("i=%d n=%d sum=%d",i,n,sum);
+}
